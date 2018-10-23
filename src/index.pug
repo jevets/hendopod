@@ -5,16 +5,19 @@ layout: layout.pug
 include /mixins
 
 section.section.bg-white
-  +container()
-    include /header
+  include /header
 
 section.section.bg-grey-lighter.py-16.shadow-inner
   +container()
     include /intro
 
-section.section.bg-blue-darker.text-white.py-16.shadow-inner
+section#patients.section.bg-blue-darker.text-white.py-16.shadow-inner
   +container()
     include /patients
+
+section#location.section.py-16.shadow-inner
+  +container()
+    include /location
 
 section.section.py-32.bg-grey-lighter.shadow-inner
   +container()

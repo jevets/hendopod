@@ -4,5 +4,15 @@
 body {
   @apply .font-sans;
 }
+a {
+  @apply .text-blue-dark;
+}
+
+.btn {
+  @apply .block .text-xl .bg-orange-dark .text-white .py-3 .px-4 .rounded-lg .no-underline .text-center;
+}
+.btn:hover {
+  @apply .bg-red .text-white;
+}
 
 @tailwind utilities;

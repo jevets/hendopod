@@ -5,7 +5,7 @@
     class="md:w-1/2 md:block"
     style="background: transparent url(/img/feet-in-bed.jpg) center bottom; background-size: cover; height: 400px;"
   )
-  .p-4(class="md:p-8")
+  .p-4(class="md:p-6")
     p.font-black.my-4.text-xl= site.title
     - var address = company.location.address
     p.my-4.leading-normal
@@ -23,9 +23,18 @@
       br
       | #{ company.fax }
       span.text-grey.text-xs.ml-1 fax
-    p.my-8.text-2xl
+    p.my-4
       a.text-white(
         target="_blank"
         href=company.socialURLs.facebook
       )
-        include /icon_facebook
+        i.fa.fa-facebook-square.fa-2x
+    p.my-4.text-sm.leading-tight.text-grey-light
+      | &copy;#{ new Date().getFullYear() } #{ site.title }. All rights reserved.
+      br
+      | Proud member of
+      |
+      a.text-grey-light.no-underline(
+        href="http://www.instridefoot.com/"
+        target="_blank"
+      ) InStride Foot &amp; Ankle Specialists</a>

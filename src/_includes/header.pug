@@ -1,6 +1,15 @@
-.flex.flex-wrap.flex-col.items-center.py-8
+.flex.flex-wrap.flex-col.items-center.p-8(
+  class="md:px-4 md:py-0 md:flex-row md:justify-between"
+)
   .my-4
     a(href="/")
-      img.h-24(src="/img/logo.jpg" alt=site.title)
-  .my-4.max-w-sm
+      img.max-w-full(
+        class="md:h-24"
+        src="/img/logo.jpg"
+        alt=site.title
+      )
+  .my-4
     include /_btn-appointment
+  .mb-4(class="md:hidden")
+    a.mx-4(href="/#patients") New Patients &raquo;
+    a.mx-4(href="/#location") Contact Us &raquo;
