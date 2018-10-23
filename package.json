@@ -1,0 +1,12 @@
+{
+  "name": "hendopod",
+  "description": "statically-generated site for hendopod",
+  "private": true,
+  "scripts": {
+    "dev": "DEBUG=Eleventy* eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.5.4"
+  }
+}
