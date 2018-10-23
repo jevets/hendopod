@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "DEBUG=Eleventy* eleventy --serve",
-    "build": "eleventy && gulp css"
+    "build": "gulp"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.5.4",
     "autoprefixer": "^9.3.0",
     "gulp": "^3.9.1",
     "gulp-postcss": "^8.0.0",
+    "gulp-purgecss": "^1.1.1",
+    "gulp-run-command": "^0.0.9",
     "tailwindcss": "^0.6.6"
   }
 }
