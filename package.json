@@ -7,6 +7,10 @@
     "build": "eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.5.4"
+    "@11ty/eleventy": "^0.5.4",
+    "autoprefixer": "^9.3.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "tailwindcss": "^0.6.6"
   }
 }

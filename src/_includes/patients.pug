@@ -1,0 +1,16 @@
+h2.text-center.font-black.text-4xl New Patients
+
+.mx-auto.max-w-lg
+  .text-center.py-8
+    p.my-4.text-xl Please complete the following forms and bring them with you on your first visit.
+    p.my-4.text-grey You may also fax the forms to our confidential fax at #{ company.fax } or fill them out at our office.
+
+  .max-w-sm.mx-auto
+    each form in site.patientForms
+      a.bg-blue-lightest.border.border-t-0.text-lg.p-4.block.no-underline.flex.items-center.font-black.text-blue-dark(
+        class="hover:bg-blue hover:text-white hover:border-blue-dark"
+        href=form.url
+      )
+        span.mr-2
+          include /icon_pdf
+        span= form.label

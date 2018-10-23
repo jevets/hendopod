@@ -1,17 +1,21 @@
 ---
 title: Podiatrist in Hendersonville, North Carolina
+layout: layout.pug
 ---
-section.section
-  code Intro
+include /mixins
 
-section.section
-  code Location
+section.section.bg-white
+  +container()
+    include /header
 
-section.section
-  code Doctor
+section.section.bg-blue-darker.text-white.py-16
+  +container()
+    include /patients
 
-section.section
-  h2 New Patients
+section.section.py-32.bg-grey-lighter
+  +container()
+    include /doctor
 
-section.section
-  h2 Conditions we treat
+section.section.bg-blue-darker.text-white.py-16
+  +container()
+    include /services

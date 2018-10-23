@@ -1,0 +1,15 @@
+{
+  "title": "Hendersonville Podiatry",
+  "patientForms": [
+    {
+      "label": "Medical History",
+      "url": "/pdf/MedicalHistory.pdf"
+    }, {
+      "label": "Office Policies",
+      "url": "/pdf/Office-Policies.pdf"
+    }, {
+      "label": "Patient Registration",
+      "url": "/pdf/PatientRegistrationForm.pdf"
+    }
+  ]
+}

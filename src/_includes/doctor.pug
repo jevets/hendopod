@@ -1,0 +1,32 @@
+.flex.flex-wrap.items-center.max-w-xl.mx-auto
+  .mb-4(class="md:w-1/2")
+    img.max-h-full.rounded-lg.mx-auto(
+      src="/img/pam.jpg"
+      alt="Pamela Barone Stover, DPM"
+    )
+  .mb-4.text-center(class="md:w-1/2 md:text-left")
+    h2.mb-8.text-3xl.font-black.leading-tight #{ company.doctors.pam.name }, #{ company.doctors.pam.title }
+    p.my-4.leading-normal= company.doctors.pam.bio
+    p.my-4.mt-8.text-xl.font-bold Specialization
+    ul.list-reset.leading-loose
+      each item in company.doctors.pam.specialties
+        li #{ item }
+
+//- .flex.my-8.justify-center.py-6
+  .mb-4(class="w-1/3")
+    .p-4
+      p.font-bold Undergraduate
+      p.my-4.text-grey-darkest
+        | B.A. Journalism and Mass Communication
+        br
+        | University of Chapel Hill, NC, 1999-2003
+  .mb-4(class="w-1/3")
+    .p-4
+      p.font-bold Medical
+      p.my-4.text-grey-darkest
+        | Barry University, Miami Shores, FL, 2003-2007
+  .mb-4(class="w-1/3")
+    .p-4
+      p.font-bold Residency
+      p.my-4.text-grey-darkest
+        | Veterans Affairs Medical Center, Dayton, OH, 2007-2010

@@ -1,0 +1,8 @@
+@tailwind preflight;
+@tailwind components;
+
+body {
+  @apply .font-sans;
+}
+
+@tailwind utilities;

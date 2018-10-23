@@ -4,5 +4,8 @@ module.exports = function (config) {
     output: './dist',
   }
 
+  config.addPassthroughCopy('src/img')
+  config.addPassthroughCopy('src/pdf')
+
   return config
 }
