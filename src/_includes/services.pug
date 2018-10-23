@@ -1,1 +1,29 @@
-div Services &amp; Common Conditions
+.bg-blue-darker.text-white.flex.items-center
+  .hidden(
+    class="md:w-1/2 md:block"
+    style="background: transparent url(/img/feet-in-bed.jpg) center bottom; background-size: cover; height: 400px;"
+  )
+  .p-4(class="md:p-8")
+    p.font-black.my-4.text-xl= site.title
+    - var address = company.location.address
+    p.my-4.leading-normal
+      | #{ address.street }
+      br
+      | #{ address.city }, #{ address.state } #{ address.zip }
+      br
+      a.text-white(
+        href=company.location.gmapURL
+        target="_blank"
+      ) Google Map &raquo;
+    p.my-4.leading-normal
+      | #{ company.phone }
+      span.text-grey.text-xs.ml-1 tel
+      br
+      | #{ company.fax }
+      span.text-grey.text-xs.ml-1 fax
+    p.my-8.text-2xl
+      a.text-white(
+        target="_blank"
+        href=company.socialURLs.facebook
+      )
+        include /icon_facebook
