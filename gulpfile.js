@@ -6,7 +6,13 @@ const run = require('gulp-run-command').default
  */
 gulp.task('html:compile', run('eleventy'))
 
-gulp.task('html', ['html:compile'])
+gulp.task('html:min', ['html:compile'], () => {
+  return gulp.src('dist/**/*.html')
+    .pipe(require('gulp-htmlmin')({ collapseWhitespace: true }))
+    .pipe(gulp.dest('dist'))
+})
+
+gulp.task('html', ['html:compile', 'html:min'])
 
 /**
  * CSS Processing & Cleanup
@@ -38,7 +44,13 @@ gulp.task('css:purge', ['html:compile', 'css:compile'], () => {
     .pipe(gulp.dest('dist'))
 })
 
-gulp.task('css', ['css:compile', 'css:purge'])
+gulp.task('css:min', ['css:purge'], () => {
+  return gulp.src('dist/styles.css')
+    .pipe(require('gulp-cssmin')())
+    .pipe(gulp.dest('dist'))
+})
+
+gulp.task('css', ['css:compile', 'css:purge', 'css:min'])
 
 /**
  * Default (all tasks)
