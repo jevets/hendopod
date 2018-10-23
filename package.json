@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "DEBUG=Eleventy* eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy && gulp css"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.5.4",
