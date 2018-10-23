@@ -3,6 +3,19 @@
   "phone": "828-697-1343",
   "fax": "828-697-3224",
   "instrideProfileUrl": "https://www.instridefoot.pcctest.com/location/40-hendersonville-podiatry",
+  "socialURLs": {
+    "facebook": "https://www.facebook.com/pages/Hendersonville-Podiatry/1598803657074238"
+  },
+  "location": {
+    "address": {
+      "street": "600 5th Avenue West",
+      "city": "Hendersonville",
+      "state": "North Carolina",
+      "zip": "28739"
+    },
+    "latitude": "35.316720",
+    "longitude": "-82.466780"
+  },
   "doctors": {
     "pam": {
       "name": "Pamela Barone Stover",
