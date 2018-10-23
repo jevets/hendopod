@@ -1,7 +1,7 @@
 h2.text-center.font-black.text-4xl New Patients
 
 .mx-auto.max-w-lg
-  .text-center.py-8
+  .text-center.my-8.leading-tight
     p.my-4.text-xl Please complete the following forms and bring them with you on your first visit.
     p.my-4.text-grey You may also fax the forms to our confidential fax at #{ company.fax } or fill them out at our office.
 
@@ -16,8 +16,4 @@ h2.text-center.font-black.text-4xl New Patients
         span= form.label
 
   .max-w-sm.mx-auto.my-16.text-center
-    a.block.text-xl.bg-orange-dark.text-grey-lightest.no-underline.p-3.rounded-lg(
-      class="hover:bg-red-dark hover:text-white"
-      target="_blank"
-      href=company.instrideProfileUrl
-    ) Schedule an Appointment &raquo;
+    include /_btn-appointment
