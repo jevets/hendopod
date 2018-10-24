@@ -1,7 +1,7 @@
 h2.text-center.mb-16.text-4xl.font-bold.leading-tight Contact Info
 
 .max-w-lg.mx-auto
-  .flex.flex-wrap.justify-between.items-center
+  .my-4.flex.flex-wrap.justify-between.items-center
     .mb-4.w-full(class="md:w-1/2")
       p.my-4.text-center
         img.max-w-full.shadow-md.border(
@@ -11,9 +11,8 @@ h2.text-center.mb-16.text-4xl.font-bold.leading-tight Contact Info
     .mb-4.text-center(class="md:w-1/2 md:text-left")
       - var address = company.location.address
       p.font-bold Address
-      p.mb-4.leading-normal.text-grey-darkest
-        | #{ address.street },
-        | #{ address.city }, NC #{ address.zip }
+      .mb-4.leading-normal.text-grey-darkest
+        include /_address
         br
         a(
           href=company.location.gmapURL
@@ -23,9 +22,4 @@ h2.text-center.mb-16.text-4xl.font-bold.leading-tight Contact Info
       p.mb-4.leading-normal.text-grey-darkest= company.phone
       p.font-bold Fax
       p.mb-4.leading-normal.text-grey-darkest= company.fax
-      //- p.my-4
-        a.text-grey-darker(
-          target="_blank"
-          href=company.socialURLs.facebook
-        )
-          i.fa.fa-facebook-square.fa-lg
+

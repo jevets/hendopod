@@ -9,9 +9,10 @@
   "location": {
     "gmapURL": "https://goo.gl/maps/oajvjoSSMHF2",
     "address": {
-      "street": "600 5th Avenue West",
+      "street": "600 5th Ave West",
       "city": "Hendersonville",
       "state": "North Carolina",
+      "stateAbbr": "NC",
       "zip": "28739"
     },
     "latitude": "35.316720",
