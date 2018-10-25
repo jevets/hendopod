@@ -4,6 +4,7 @@ module.exports = function (config) {
     output: './dist',
   }
 
+  config.addPassthroughCopy('src/favicon.ico')
   config.addPassthroughCopy('src/img')
   config.addPassthroughCopy('src/pdf')
 
