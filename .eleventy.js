@@ -8,5 +8,7 @@ module.exports = function (config) {
   config.addPassthroughCopy('src/img')
   config.addPassthroughCopy('src/pdf')
 
+  config.addPassthroughCopy('src/robots.txt')
+
   return config
 }
